@@ -1,0 +1,31 @@
+Make a gravity-sim good enough to do planetary orbits pretty well.
+Then add space stations with hugass mass drivers.
+
+Use OpenGL.  You can do pretty simple graphics, I expect.  Wireframes and
+Defcon-ish abstractions would be cool.
+
+Feel free to hardwire things.
+
+
+TODO:
+Circular coordinates, and focus-on-object (or point) --HW style, bitches!
+Mess with depth buffer, too.
+Particle trails --lines?
+Make things rotate!
+Better graphics -color and size
+Cache quadrics and make meshes in general...
+
+
+
+NOTES:
+Don't bother with momentum exchange yet.
+At the moment, if two objects hit, the smaller (less massive) one just dies.
+
+
+Masses and stuff:
+let sun = new mass 2.0e30 (new vector 0. 0. 0.) (new vector 0. 0. 0.)
+    and mercury = new mass 3.3e23 (new vector 55e9 0. 0.) (new vector 0. 47000. 0.)
+    and venus = new mass 4.9e24 (new vector 108e9 0. 0.) (new vector 0. 35000. 0.)
+    and earth = new mass 6.0e24 (new vector 149.0e9 0. 0.) (new vector 0. 30000. 0.)
+    and mars = new mass 6.4e23 (new vector 225e9 0. 0.) (new vector 0. 23000. 0.)
+    and ceres = new mass 6.0e21 (new vector 400e9 0. 0.) (new vector 0. 18000. 0.)
